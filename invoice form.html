@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <h1 align="center"> Fatima's Music Shop</h1>
+ 
+    <style>
+
+
+      legend{
+
+        background-color: rgb(110, 112, 114);
+        padding: 5px 10px;
+        color: aliceblue;
+        border-radius: 10px;
+        margin: 0 auto;
+        
+        
+      }
+
+      label{
+
+        padding: 5px;
+        margin-right: 10px ;
+      }
+
+
+      fieldset{
+
+        background-color: beige;
+      }
+   
+      table,th{
+
+        border: 1px solid rgb(0, 0, 0);
+
+      }
+
+      td,tr{
+        padding: none;
+        margin: 0%;
+        border-bottom: rgb(0, 0, 0);
+        border: 1px solid;
+      }
+      textarea.text{
+
+        border: none;
+        width: 100%;;
+        box-sizing: border-box;
+       
+
+      }
+     
+      tr.body:hover {
+        background-color: rgb(235, 210, 173);
+        cursor: pointer;
+        box-shadow: 0 0 0 1px rgb(92, 168, 139);
+        color: red;
+      }
+
+     
+    </style>
+    <fieldset>
+<legend> Invoice Details</legend>
+    <title> Fatima's Invoice</title>
+
+  </head>
+
+  <body>
+    <label> Invoice To:</label>
+    <input type="text" id="Invoice" name="Invoice" maxlength="50" placeholder="Enter Full Name"/>
+    <div>
+    <label> Contact #:</label>
+    <input type="text" id="contact" name="contact" maxlength="13" placeholder="Type your mobile number"/>
+    <label> Date:</label>
+    <input type="date" id="date" name="date"/>
+  </div>
+   
+</fieldset>
+
+ <form action="https://google.com" target="_blank" method="GET">
+  
+<table  class="table" style="width:100%; border: none;">
+  
+
+  <thead style="background-color: rgb(230, 200, 200);">
+    <tr class="head">
+      <th > Item Description</th>
+      <th> Qty</th>
+      <th> Unit Price</th>
+      <th> Amount</th>
+    </tr>
+
+  </thead>
+
+  <tbody>
+<tr class="body" align="center">
+
+ <td> <textarea class="text" maxlength="100" name="desc1" placeholder="Description 1"></textarea></td>
+  <td  ><input type="number" name="qty1" id="qty1" /> </td>
+  <td  ><input type="number" name="unit1" id="unit1" /> </td>
+  <td  ><input type="number" name="amount1" id="amount1" /> </td>
+<tr class="body" align="center">
+
+  <td> <textarea class="text" name="desc2" placeholder="Description 2"></textarea></td>
+  <td ><input type="number" name="qty2" id="qty2" /> </td>
+  <td  ><input type="number" name="unit2" id="unit2" /> </td>
+  <td  ><input type="number" name="amount2" id="amount2" /> </td>
+<tr class="body" align="center">
+
+  <td> <textarea class="text" name="decs3" maxlength="100" placeholder="Description 3 "></textarea></td>
+  <td ><input type="number" name="qty3" id="qty3" /> </td>
+  <td  ><input type="number" name="unit3" id="unit3" /> </td>
+  <td  ><input type="number" name="amount3" id="amount3" /> </td>
+</tr>
+<tr class="body" align="center">
+
+  <td> <textarea class="text" maxlength="100" name="desc4" placeholder="Description 4"></textarea></td>
+  <td ><input type="number" name="qty4" id="qty4" /> </td>
+  <td  ><input type="number" name="unit4" id="unit4" /> </td>
+  <td  ><input type="number" name="amount4" id="amount4"/> </td>
+</tr>
+<tr class="body">
+
+  <td colspan="3" align="right"><b> Subtotal</b></td>
+  <td align="center" ><input type="number" name="subtotal" id="sub" /> </td>
+  
+</tr>
+<tr class="body">
+
+  <td colspan="3" align="right"> <b>VAT (12%)</b></td>
+  <td align="center"  ><input type="number" name="vat" id="vat" /> </td>
+  
+</tr>
+<tr class="body">
+
+  <td colspan="3" align="right"><b> Total</b></td>
+ <td align="center"><input type="number" name="total" id="total" maxlength="100"/> </td>
+  </tr>
+
+</tbody>
+</table>  
+<fieldset>
+ 
+  <legend> Additional Details</legend>
+  <label> Payment Method</label>
+  <select name="method" >
+    <option value=""> --Select Payment Method-- </option>
+  
+    <option value="gcash"> GCASH </option>
+    <option value="paypal"> PAYPAL </option>
+    <option value="Debit"> Debit Card </option>
+    <option value="Credit"> Credit Card </option>
+  </select>
+  <br> 
+
+
+<input type="radio" id="home" name="opt"/>
+<label for="home">Home</label>
+
+
+<input type="radio" id="office" name="opt"/>
+<label for="office">Office</label>
+
+    
+
+    <div>
+
+      <textarea style="border: 1px solid black ;"  rows="20" cols="40" maxlength="500" placeholder="Type the details" name="details"></textarea>
+    </div>
+
+    <input type="submit" value="Submit"/>
+</body>
+
+
+</fieldset>
+
+
+</html>
