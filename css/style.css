@@ -1,0 +1,146 @@
+.page-wrapper{
+
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 15px;
+
+}
+
+header{
+
+
+height: 50px;
+width: 100%;
+background-color: antiquewhite;
+position: static;
+}
+
+
+
+h1{
+
+  color:rgb(22, 42, 59);
+  text-align: center;
+  font-size: 32px;
+}
+
+h2{
+
+  color: rgb(44, 114, 175);
+  text-align: center;
+  font-size: 32px;
+}
+
+.about-me p{
+  font-size: 21px;
+  line-height: 35px;
+  
+}
+
+section.about-me{
+
+  margin-top: 60px;
+  margin-bottom: 80px;
+  text-align: justify;
+}
+
+header{
+  text-align: center;
+}
+
+
+
+
+.none{
+
+width: 200px;
+display: inline-block;
+
+
+
+}
+
+.none1{
+
+  display: inline;
+}
+
+.none2{
+
+  display: inline;
+}
+
+.flex{
+
+  display: flex;
+
+
+}
+
+.with-direction{
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.with-direction>div{
+  height: 40px;
+  
+}
+
+.fbb{
+
+  flex-grow: 2;
+}
+
+.ytt{
+  flex-grow: 2;
+}
+
+.ytt2{
+
+  flex-grow: 2;
+}
+
+.lii{
+
+  flex-grow: 2;
+}
+
+.container {
+
+ 
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  background-color: rgb(182, 187, 187);
+  height: 100%;
+  align-content: center;
+  justify-content:center ;
+  
+  
+  }
+
+
+
+.item{
+
+  width: 64px;
+  height: auto;
+  
+  
+
+}
+
+
+.container>div{
+
+width: 224px;
+margin: 10px;
+text-align: center;
+line-height: 12px;
+font-size: 12px;
+margin-top: 10px;
+background-color: antiquewhite;
+border: solid black;
+box-shadow: rgb(22, 42, 59);
+}
