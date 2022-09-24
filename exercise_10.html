@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="js/bootstrap.min.js" type="javascript"></script>
+
+    <h1 class="text-center p-5"> Fatima's Music Shop</h1>
+    <style>
+      
+      table,td,th{
+
+border: 1px solid black;
+border-style: solid;
+background-color: rgb(238, 221, 204);
+
+}
+.float-none{
+  text-align: center;
+  border: solid 1px black;
+  border-radius: 20px;
+  padding: 10px;
+}
+th{
+  text-align: center;
+}
+
+
+th, td{ 
+padding: 12px;
+
+
+}
+/* 
+tr.body:hover {
+background-color: rgb(189, 192, 191);
+} */
+
+      
+    </style>
+    
+
+  </head>
+  <body>
+  <div class="container">
+    
+     <fieldset class="border p-2">
+      <legend class="float-none w-auto">Invoice Details</legend>
+                
+                  <div class="row ">
+                      <div class="col my-3">
+                    <label> Invoice To:</label>
+                    <input class="form-control" type="text" id="Invoice" name="Invoice" maxlength="50" placeholder="Enter Full Name"/>
+                      </div>
+                      <div class="col my-3">
+                  <label> Contact #:</label>
+                  <input class="form-control" type="text" id="contact" name="contact" maxlength="13" placeholder="Type your mobile number"/>
+                        </div>
+                   <div class="ms-1"> 
+                  <label> Date:</label><br>
+                  <input class="form-control" type="date" id="date" name="date"/>
+                </div>   
+                </div>
+              </div>
+            
+  </fieldset>
+  <form action="https://google.com" target="_blank" method="GET">
+ 
+  <div class="container p-3">
+    <table  class="table table-hover table-bordered" style="width:100%; border: solid 1px black;">
+  
+
+      <thead style="background-color: rgb(214, 209, 209);">
+        <tr class="head h3">
+          <th> Item Description</th>
+          <th > Qty</th>
+          <th> Unit Price</th>
+          <th> Amount</th>
+        </tr>
+    
+      </thead>
+    
+      <tbody>
+    <tr class="body" align="center">
+    
+     <td> <textarea class="form-control" type="text" maxlength="100" name="desc1" placeholder="Description 1"></textarea></td>
+      <td  ><input class="form-control" type="number" name="qty1" id="qty1" /> </td>
+      <td  ><input class="form-control" type="number" name="unit1" id="unit1" /> </td>
+      <td  ><input class="form-control" type="number" name="amount1" id="amount1" /> </td>
+    <tr class="body" align="center">
+    
+      <td> <textarea class="form-control" type="text" name="desc2" placeholder="Description 2"></textarea></td>
+      <td ><input class="form-control" type="number" name="qty2" id="qty2" /> </td>
+      <td  ><input class="form-control" type="number" name="unit2" id="unit2" /> </td>
+      <td  ><input class="form-control" type="number" name="amount2" id="amount2" /> </td>
+    <tr class="body" align="center">
+    
+      <td> <textarea class="form-control" type="text" name="decs3" maxlength="100" placeholder="Description 3 "></textarea></td>
+      <td ><input class="form-control" type="number" name="qty3" id="qty3" /> </td>
+      <td  ><input class="form-control" type="number" name="unit3" id="unit3" /> </td>
+      <td  ><input class="form-control" type="number" name="amount3" id="amount3" /> </td>
+    </tr>
+    <tr class="body" align="center">
+    
+      <td> <textarea class="form-control" type="text" maxlength="100" name="desc4" placeholder="Description 4"></textarea></td>
+      <td ><input class="form-control" type="number" name="qty4" id="qty4" /> </td>
+      <td  ><input class="form-control" type="number" name="unit4" id="unit4" /> </td>
+      <td  ><input class="form-control" type="number" name="amount4" id="amount4"/> </td>
+    </tr>
+    <tr class="body">
+    
+      <td colspan="3" align="right"><b> Subtotal</b></td>
+      <td align="center" ><input class="form-control" type="number" name="subtotal" id="sub" /> </td>
+      
+    </tr>
+    <tr class="body">
+    
+      <td colspan="3" align="right"> <b>VAT (12%)</b></td>
+      <td align="center"  ><input class="form-control" type="number" name="vat" id="vat" /> </td>
+      
+    </tr>
+    <tr class="body">
+    
+      <td colspan="3" align="right"><b> Total</b></td>
+     <td align="center"><input class="form-control" type="number" name="total" id="total" maxlength="100"/> </td>
+      </tr>
+    
+    </tbody>
+    </table>  
+
+    <fieldset class="border p-2">
+ 
+      <legend class="float-none w-auto"> Additional Details</legend>
+      <label> Payment Method</label>
+      <input class="form-select" list="datalistOptions" id="mode" placeholder="SELECT PAYMENT METHOD">
+      <datalist id="datalistOptions" >
+
+      
+        <option value=GCASH></option>
+        <option value=PAYPAL>
+        <option value=DEBITCARD>
+        <option value=CREDIT>
+      </datalist>
+     
+    <div class="row ms-1">
+    <div class="form-check col-1  ">
+    <input class="form-check-input" type="radio" id="home" name="opt"/>
+    <label class="form-check-label"  for="home">Home</label>
+  </div> 
+    <div class="form-check col-11  ">
+    <input class="form-check-input" type="radio" id="office" name="opt"/>
+    <label  class="form-check-label"  for="office">Office</label>
+  </div> 
+</div>
+    
+        <div>
+    
+          <textarea class="form-control-lg mb-3" style="border: 1px solid black ;" rows="10" placeholder="Type the details" name="details"></textarea>
+        </div>
+    
+        <input type="submit" class="btn btn-success" value="Submit"/>
+    </body>
+    
+    
+    </fieldset>
+
+  </div>
+
+
+                 </body>
+                </div>
+
+</html>
