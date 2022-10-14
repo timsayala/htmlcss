@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Javascript Exercise 1</title>
+    <meta name="viewport" content="width=device=width, initial-scale=1"/>
+    <script type="text/javascript" src="js/kodego.js"></script>
+  </head>
+  <body>
+    <h3>Machine Problem 1</h3>
+    <input type="number" placeholder="Odd or Even" id="numb1" value=""/>
+    <button onclick="doCheck()">Check</button>
+    <div id="result"></div>
+
+    <h3>Machine Problem 2</h3>
+    <input type="text" placeholder="Vowel or Consonant" id="letter" value=""/>
+    <button onclick="Chk()">Check</button>
+    <div id="result1"></div>
+
+  </body>
+
+  <script>
+
+    function doCheck(){
+      let x = document.getElementById("numb1").value;
+
+      if ((x % 2) == 0){
+          document.getElementById("result").innerHTML = " Even ";
+
+          
+      }else{
+        document.getElementById("result").innerHTML = " Odd ";
+      }
+    }
+
+    function Chk(){
+      let y = document.getElementById("letter").value;
+
+      if( y == "A" || y == "a" || y == "e" || y == "E" || y == "I" || y == "i" || y == "O" || y == "o" || y == "U" || y == "u"){
+
+        document.getElementById("result1").innerHTML = "Vowel";
+
+      }else{
+        document.getElementById("result1").innerHTML = "Consonant";
+      }
+    }
+
+  </script>
+</html>
